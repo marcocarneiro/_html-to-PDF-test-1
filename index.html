@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 1.5cm;  /* Margem padrão */
+        }
+        @media print {
+            body {
+                width: 210mm;
+                max-width: 210mm;
+                margin: 0;
+                padding: 0;
+                font-size: 12pt;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 210mm;
+            }
+        }
+        @font-face {
+            font-family: "Roboto";
+            src: url("Roboto-Regular.ttf") format("truetype");
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 6px;
+        }
+        th{
+            border: 1px solid #888;
+        }
+        td{
+            border: 1px solid #888;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;            
+        }
+        .txt-right {
+            text-align: right;
+        }
+        .txt-center {
+            text-align: center;
+        }
+        .txt-baseline{
+            align-self: end;
+        }
+        .m-default{
+            margin: 20px;
+        }
+        .m-0{
+            margin: 0;
+        }
+        .border-base{
+            border-bottom: 1px solid #888;
+            padding: 10px;
+        }
+        .bg-gray{
+            background-color: #f0f0f0;
+        }
+        .bg-green{
+            background-color: #91cd50;
+        }
+        .bg-yellow{
+            background-color: #ffd764;
+        }
+        .no-border{
+            border: none;
+        }
+
+  </style>
+</head>
+<body>
+    <div class="container m-default border-base">
+        <div class="logo txt-baseline">
+            <img src="./logotipo.png" alt="Logo">
+        </div>
+        <div class="report-title txt-baseline">
+            <p class="m-0">ORDEM DE COMPRA | 00000</p>
+        </div>
+        <div class="txt-right txt-baseline">
+            NOME DO CLIENTE LTDA <br>
+            rua Nonon nonon, 000 - Vila Olimpia <br>
+            SÃO PAULO/SP | 00000-000 <br>
+            CNPJ: 00.000.000/0000-00 | IE: Isenta <br>
+            PABX: 11-0000-0000 <br>
+            Página: 1 de 2
+        </div>
+    </div>
+    <div class="container m-default">
+        <p>
+          Coordenador Responsável: Fulano de tal da Silva  
+        </p>
+        <p class="txt-right">
+            Data de Emissão: 05/03/2026
+        </p>        
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <tr>
+                <th class="bg-green" colspan="2">Dados Gerais do Evento</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td class="bg-gray">Código Evento</td>
+                    <td>0075/25</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nome Evento</td>
+                    <td>Nononon nonon 0000</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Data do Evento</td>
+                    <td>25/02/2026</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Cliente</td>
+                    <td>NOME DO CLIENTE COMERCIO E SERVIÇOS</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <tr>
+                <th class="bg-green" colspan="4">FORNECEDOR</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td class="bg-gray">Nonono nonon</td>
+                    <td  colspan="3">Nononon nono nonon</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nonono nonon</td>
+                    <td colspan="3">Nononon nono nonon</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nonono nonon</td>
+                    <td >Nononon nono nonon</td>
+                    <td class="bg-gray">IE</td>
+                    <td>0000000000</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nonono nonon</td>
+                    <td colspan="3">Nononon nono nonon</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nonono nonon</td>
+                    <td >Nononon nono nonon</td>
+                    <td class="bg-gray">E-mail</td>
+                    <td>nononon.nonon@nononon.com</td>
+                </tr>
+            </tbody>            
+        </table>
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <tr>
+                <th class="bg-green" colspan="2">INFORMAÇÕES DE ENTREGA/MONTAGEM</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td class="bg-gray">Nnonon</td>
+                    <td>Nonononon non nonon nonon</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nnonon non</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nnonon non</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nnonon</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nnonon non</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray">Nnonon non</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>            
+        </table>
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <thead>
+                <tr>
+                    <th class="bg-green" colspan="6">Descrição do Serviço/Produto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-gray">Descrição</td>
+                    <td class="bg-gray">Nnonon no</td>
+                    <td class="bg-gray">Nnonon no</td>
+                    <td class="bg-gray">Nnonon no</td>
+                    <td class="bg-gray">Nnonon no</td>
+                    <td class="bg-gray">Nnonon no</td>
+                </tr>
+                <tr>
+                    <td>Item 2 descrição</td>
+                    <td>2</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                
+                <tr>
+                    <td class="no-border"></td>
+                    <td class="no-border"></td>
+                    <td class="no-border"></td>
+                    <td class="bg-gray">Total Geral</td>
+                    <td colspan="2" class="bg-gray">R$ 200,00</td>
+                </tr>
+
+                <tr>
+                    <td class="no-border"></td>
+                    <td class="no-border"></td>
+                    <td class="no-border"></td>
+                    <td class="bg-gray">Total Geral</td>
+                    <td colspan="3" class="bg-gray">R$ 200,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <thead>
+                <tr>
+                    <th class="bg-green" colspan="4">VALOR E CONDIÇÃO DE PAGAMENTO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-gray">Descrição</td>
+                    <td class="bg-gray">Nnonon no</td>
+                    <td class="bg-gray">Nnonon no</td>
+                    <td class="bg-gray">Nnonon no</td>
+                </tr>
+                <tr>
+                    <td>R$ 50,00</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 100,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="bg-green">Transferência | Dados Bancários</td>
+                    <td>Banco:000 Agência:0000 Conta:00000-0 CNPJ/CPF:00.000.000/0000-00 Chave PIX:00.000.000/0000-00</td>
+                </tr>
+                <tr>
+                    <td class="bg-green">Incentivo | Forma de Recebimento</td>                    
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <tbody>
+                <tr>
+                    <th class="bg-yellow txt-center">DADOS DA NOTA FISCAL</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container m-default">
+        <table>
+            <tbody>
+                <tr>
+                    <th class="bg-green">EMISSÃO E ENTREGA DA NOTA FISCAL/BOLETO / FATURA/ RECIBO</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            A Nota Fiscal/ Boleto / Fatura / Recibo com o valor total do serviço deverá entregue e/ou enviada conforme dados de faturamento abaixo:
+                        </p>
+                        <p>
+                            <strong>
+                                Nome do cliente Ltda <br>
+                                Rua Nnononon, 000 - Nome do Bairro, São Paulo/SP CEP 00000-000 <br>
+                                CNPJ: 00.000.000/0000-00 | IE: Isenta
+                            </strong>
+                        </p>
+                        <p>
+                            * Nenhuma Nota Fiscal/ Boleto / Fatura / Recibo será aceito após a data acima negociada. <br>
+                            ** O período fiscal de recebimento e faturamento de NF da Nome do Cliente é encerrado mensalmente até o dia 25. Depois desse período, só voltamos a receber NF no dia 01 do mês subsequente.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="bg-green">INFORMAÇÕES FISCAIS</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            *** Para empresas sediadas na cidade de São Paulo, a emissão de Nota Fiscal deve ser obrigatoriamente eletrônica conforme legislação
+                            de 01 de agosto de 2011. A Nome do Cliente reserva-se no direito de apenas pagar por serviços ou produtos prestados, mediante emissão de Nota Fiscal Eletrônica.
+                        </p>
+                        <p>
+                            ***Somente aceitamos recibo ou fatura de locação de bens móveis, se a empresa estiver enquadrada conforme lei complementar nº 116 de 31/07/2003.
+                        </p>
+                        <p>
+                            *** Para qualquer compra que envolva a aquisição de "Mercadorias" em nome da Nome do Cliente, o fornecedor deverá enviar
+                            a Nota Fiscal Eletrônica (DANFE). Não serão aceitas notas fiscais efetuadas em papel, preenchida manualmente ou por computador.
+                        </p>
+                        <p>
+                            *** Enviar a Nota Fiscal em formato PDF.
+                        </p>
+                        <p>
+                            *** Caso a nota fiscal da empresa seja ME ou EPP, por favor, enviar anexa a nota fiscal os seguintes documentos: 
+                            DAS do simples, Declaração de Isenção de PIS, Confins e CSLL.
+                        </p>
+                        <p>
+                            *** Ressaltamos também que a conta bancária para crédito deverá ser jurídica e compatível com a nota fiscal.
+                        </p>
+                        <p>
+                            *** Caso haja retenção de impostos sobre sua Nota Fiscal, alertamos que os mesmos serão descontados. É dever do tomador reter
+                            os impostos devidos, consulte seu contador.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="bg-green">INFORMAÇÕES FISCAIS</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            *** As Notas Fiscais que não observarem os procedimentos acima serão retidas no departamento financeiro da Nome do Cliente, que enviará uma notificação
+                            ao contratante solicitando a regularização e a nova data para pagamento.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
