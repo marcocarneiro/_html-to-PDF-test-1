@@ -1,0 +1,32 @@
+# Ignore executables
+*.exe
+*.dll
+*.so
+*.dylib
+
+# PowerShell scripts
+*.ps1
+*.psm1
+
+# PDF files (often generated)
+*.pdf
+
+# Node modules and build artifacts
+node_modules/
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Misc
+*.class
+*.jar
